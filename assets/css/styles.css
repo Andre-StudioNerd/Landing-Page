@@ -50,6 +50,9 @@ h6{
     font-size: 8rem;
     text-transform: uppercase;
 }
+a{
+    text-decoration: none;
+}
 
 
 .main-content{
@@ -60,4 +63,57 @@ h6{
 
 .section-size{
     min-height: 100vh;
+}
+
+.menu{
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid #eee ;
+    
+}
+
+.menu h1{
+    font-size: 4.3rem;
+}
+.menu h1 a{
+    color: black;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li a{
+    display: block;
+    padding: 20px;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 25%;
+    width: 0;
+    height: 0.2rem;
+    background: #330033;
+    transition: all 300ms ease-in-out;
+
+}
+.menu ul li a:hover::after{
+    
+    width: 50%;
+    
+
+}
+
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
