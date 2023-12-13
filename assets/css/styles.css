@@ -8,6 +8,7 @@ font-family: 'Open Sans', sans-serif;*/
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 h1, h2,h3,h4,h5,h6{
@@ -154,4 +155,28 @@ a{
     max-width: 100%;
   display: block;
     
+}
+
+.top3{
+    background-color: #eee;
+    color: #040004;
+    height: 100vh;
+    margin-top: 1rem;
+    
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+}
+
+.top3 h2{
+    color: #040004;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 3rem;
+}
+
+.top3 p{
+    color: #040004;
+    padding-top: 1rem;
+    text-align: justify;
 }
