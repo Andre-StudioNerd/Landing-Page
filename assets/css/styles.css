@@ -429,6 +429,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         padding-top: 2rem;
      }
 
+     .gallery_p{
+        padding: 4rem;
+    }
+
      @media (max-width:600px){
 
         .grid-intro{
@@ -439,11 +443,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
      @media screen and (max-width: 1000px){
 
-        .grid-intro, .intro-text, .intro-img,.top3, .grid, .grid-collums, .gallery {
+        .grid-intro, .intro-text, .intro-img,.top3, .grid, .grid-collums,.gallerry {
             grid-template-columns: 1fr;
             padding: 10px;
             margin: 10px;
         }
+
+        .gallery p{
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        .gallery h2{
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+        }
+
+        
 
         img {
             width: 300px; 
@@ -471,6 +487,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             height: auto;
             text-align: center;
             align-items: center; 
+            display: block; /* Necessário para o margin funcionar */
+  margin-left: auto; /* aqui */
+  margin-right: auto; /* e aqui */
 
           }
           .grid-collums{
