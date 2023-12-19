@@ -15,6 +15,10 @@ h1, h2,h3,h4,h5,h6{
 
 }
 
+a{
+    color: #330033;
+}
+
 
 body{
     background-color: #040004;
@@ -183,6 +187,9 @@ table.blueTable {
     justify-content: space-between;
     align-items: center;
 }
+.menu-content h1{
+    padding-left: 2rem;
+}
 
 .menu-space{
     margin-top: 10rem;
@@ -323,7 +330,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 
 
-  .gallerry{
+  .gallery{
     
     background-color: #100010;
     
@@ -331,6 +338,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .gallery h2{
         padding-top: 10rem;
+       
     
     }
 
@@ -433,6 +441,37 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         padding: 4rem;
     }
 
+    .close-menu{
+        display: none;
+      }
+
+      .back-top{
+        color: #AAAAAA;
+        font-size: 20px;
+        bottom: 3rem;
+        right: 3rem;
+        position: fixed;
+        background-color: #444444;
+        padding-left:  13px;
+        padding-right: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+      }
+      .back-top:hover{
+        color: #000;
+        font-size: 20px;
+        bottom: 3rem;
+        right: 3rem;
+        position: fixed;
+        background-color: #AAAAAA;
+        padding-left:  13px;
+        padding-right: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+      }
+
      @media (max-width:600px){
 
         .grid-intro{
@@ -454,7 +493,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             padding-right: 4rem;
         }
         .gallery h2{
-            padding-left: 2rem;
+            padding-left: 4rem;
             padding-right: 2rem;
 
         }
@@ -496,9 +535,53 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             text-align: center; 
             
           }
+          .menu{
+            text-align: center;
+          }
+          .menu .menu-content,.menu .menu-content ul {
+             flex-direction: column;
+             justify-content: center;
 
+          }
 
-          
+          .menu{
+            display: none;
+          }
+
+          .close-menu{
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+          }
+
+          .close-menu-label::after{
+            content: '≡';
+            position: fixed;
+            z-index: 2;
+            top: 2rem;
+            right: 2rem;
+            color: #eee;
+            background-color: #444444;
+            font-size: 3rem;
+            line-height: 3rem;
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            padding: 0.1rem;
+            cursor: pointer;
+          }
+
+          .close-menu:checked~.menu{
+            display: block;
+            
+          }
+
+          .close-menu:checked~.close-menu-label::after{
+            display: block;
+            content: 'X';
+            
+          }
 
           }
         
