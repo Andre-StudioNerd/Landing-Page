@@ -347,7 +347,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     .img-galery{
         width: 100%;
         max-width: 36rem;
-        max-height: 22rem;
+        max-height: auto;
         overflow: hidden;
 
     }
